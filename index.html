@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="shortcut icon" href="counter-4.png" type="image/x-icon">
+    <script>
+        function openKota(namakota)
+        {
+            var i;
+            var x = document.getElementsByClassName("kota");
+            for (i = 0; i<x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(namakota).style.display = "block";
+        }
+    </script>
+    <title>Tugas Besar WEB</title>
+</head>
+<body>
+    <div class="w3-container">
+        <center>
+            <img src="Tugas.png" width="100%" height="200">
+        </center>
+    </div>
+    <div class="w3-bar w3-cyan w3-card-4">
+        <button class="w3-bar-item w3-button" onclick="openKota('iklan_sprite')">Iklan Sprite</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('M_Series')">Tentang M series Mobile Legend</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Bekasi')">Tentang Bekasi</button>
+        <div class="w3-dropdown-hover">
+            <button class="w3-button">Biodata</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <button class="w3-bar-item w3-button" onclick="openKota('Alif')">Muhamad Alif</button>
+                <button class="w3-bar-item w3-button" onclick="openKota('Hobi')">Hobi</button>
+                <button class="w3-bar-item w3-button" onclick="openKota('Alumni')">Alumni</button>
+            </div>
+        </div>
+    </div>
+    <div id="Alif" class="w3-container kota w3-animate-top" style="display: none;">
+        <center>
+        <h2 class="w3-card-4">Hallo Perkenalkan</h2>
+        <img src="IMG_3684.JPG" width="450" height="300">
+        <p>Nama : Muhamad Alif</p>
+        <p>Nim : 10123421</p>
+        <p>Kelas : IF 10</p>
+        <hr>
+        </center>
+    </div>
+    <div id="Hobi" class="w3-container kota w3-animate-bottom" style="display: none;">
+        <h2>Kalau Hobi tuh apa aja yang penting bermanfaat untuk orang lain</h2>
+        <hr>
+    </div>
+    <div id="Alumni" class="w3-container kota w3-animate-bottom" style="display: none;">
+        <center>
+        <h2 class="w3-card-4">Pondok Pesantren La Tansa</h2>
+        <img src="La Tansa.jpg" width="450" height="300">
+        <p>Pondokku pengajarkanku arti kehidupan yang sebenarnya</p>
+        <p>Ingin lebih tau La Tansa? silakan cek disini <a href="https://latansa.sch.id/">Ponpes La Tansa</a></p>
+        <hr>
+        </center>
+    </div>
+    <div id="M_Series" class="w3-container kota w3-animate-bottom" style="display: none;">
+        <center>
+        <h2 class="w3-card-4">M Series world champions</h2>
+        <img src="MLBB_Championship_Logo.png" width="450"  height="400">
+        <p>Mobile Legends: Bang Bang World Championship (disingkat M World atau M-Series ) adalah turnamen kejuaraan esports dunia Mobile Legends: Bang Bang profesional tahunan untuk permainan yang mempertemukan tim-tim di seluruh dunia untuk menjadi juara dunia Mobile Legends: Bang Bang. Legenda: Bang Bang. Turnamen tahunan ini dipersembahkan oleh Moonton dan telah diadakan sebanyak empat kali.</p>
+        <hr>
+        </center>
+    </div>
+    <div id="Bekasi" class="w3-container kota w3-animate-top" style="display: none;">
+        <center>
+        <h2 class="w3-card-4">Ada Apa sih dengan Bekasi?</h2>
+        <img src="IMG_3676.JPG" width="450" height="700">
+        <hr>
+            <p>Kota Bekasi adalah salah satu kota di provinsi Jawa Barat, Indonesia, yang berbatasan langsung dengan DKI Jakarta. Nama Bekasi berasal dari kata Bagasasi yang artinya sama dengan Candrabaga yang tertulis di dalam Prasasti Tugu era Kerajaan Tarumanegara, yaitu nama sungai yang melewati kota ini</p>
+            <p>ingin lebih tau lagi silakan cek situs bekasi ini <a href="https://www.bekasikota.go.id/home">BEKASI PUNYA</a></p>
+        </center>
+    </div>
+    <div id="iklan_sprite" class="w3-container kota w3-animate-fading" style="display: none;">
+        <hr>
+        <center>
+        <h2>Jangan Lupa minum Sprite Yah Gaesssss</h2>
+        <video autoplay loop muted width="1020px">
+            <source src="iklan_sprite.mp4">
+            </video>
+        </center>
+    </div>
+</body>
+</html>
